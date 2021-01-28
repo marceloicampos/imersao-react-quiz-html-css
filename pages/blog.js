@@ -10,10 +10,10 @@ export default function Blog() {
   return (
     <div>
       <header>
-        <Title color="red">BLOG4</Title>
+        <Title color="red">BLOG</Title>
           <p>
             <Link href="/"> 
-              <a>HOME6</a>
+              <a>LINK PARA HOME</a>
             </Link>
           </p>
       </header>
