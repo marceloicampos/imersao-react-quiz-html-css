@@ -127,7 +127,7 @@ export default function Home() {
               <a>LINK PARA O BLOG</a>
             </Link>
           </p>
-          <p>BRANCH - AULA 01</p>
+          <p>AULA 02</p>
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/marceloicampos/imersao-react-quiz-html-css" />
     </QuizBackground>
