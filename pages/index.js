@@ -1,4 +1,12 @@
+import React from 'react';
+
 import styled from 'styled-components';
+
+import Head from 'next/head';
+
+import { useRouter } from 'next/router';
+
+import Link from 'next/link';
 
 import db from './db.json';
 
@@ -11,8 +19,6 @@ import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 
 import GitHubCorner from '../src/components/GitHubCorner';
-
-import Link from 'next/link';
 
 //const Title = styled.h1`
 // font-size: 50px;
@@ -100,9 +106,15 @@ Widget.Content = styled.div`
 */
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
+        <Head>
+          <title>Quiz CSS - Imersão React</title>
+        </Head>
         <QuizLogo />
         <Widget>
             <Widget.Header>
@@ -110,6 +122,26 @@ export default function Home() {
             </Widget.Header>
             <Widget.Content>
               <p>{db.description}</p>
+              <form onSubmit={function (infosDoEvento) {
+                infosDoEvento.preventDefault();
+                router.push(`/quiz?name=${name}`);
+                // console.log('Submissão por meio do react');
+              }}
+              >
+                <input
+                  onChange={function (infosDoEvento) {
+                    setName(infosDoEvento.target.value);
+                    // console.log(infosDoEvento.target.value);
+                    // State
+                    // name = infosDoEvento.target.value;
+                  }}
+                  placeholder="Diz ai seu nome"
+                />
+                <button type="submit" disabled={name.length === 0}>
+                  Jogar
+                  {name}
+                </button>
+              </form>
             </Widget.Content>
         </Widget>
 
@@ -118,7 +150,7 @@ export default function Home() {
                 <h1>Quiz da Galera</h1>
               </Widget.Header>
               <Widget.Content>
-                <p>Olha Só</p>
+                <p>Olha a Galera</p>
             </Widget.Content>
         </Widget>
         <Footer />
@@ -127,7 +159,12 @@ export default function Home() {
               <a>LINK PARA O BLOG</a>
             </Link>
           </p>
-          <p>AULA 02</p>
+          <p>
+            <Link href="/quiz"> 
+              <a>LINK PARA O QUIZ</a>
+            </Link>
+          </p>
+          <p>BRANCH - AULA 02</p>
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/marceloicampos/imersao-react-quiz-html-css" />
     </QuizBackground>

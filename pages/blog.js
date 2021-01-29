@@ -1,3 +1,7 @@
+import React from 'react';
+
+import Head from 'next/head';
+
 import Link from 'next/link';
 
 function Title(props) {
@@ -9,6 +13,9 @@ function Title(props) {
 export default function Blog() {
   return (
     <div>
+      <Head>
+          <title>Blog</title>
+      </Head>
       <header>
         <Title color="red">BLOG</Title>
           <p>
