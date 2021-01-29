@@ -164,7 +164,7 @@ export default function Home() {
               <a>LINK PARA O QUIZ</a>
             </Link>
           </p>
-          <p>BRANCH - AULA 02</p>
+          <p>AULA - 01 OK, 02 OK, 03 em DESENVOLVIMENTO</p>
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/marceloicampos/imersao-react-quiz-html-css" />
     </QuizBackground>
