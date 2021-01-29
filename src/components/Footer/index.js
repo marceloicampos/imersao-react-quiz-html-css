@@ -44,7 +44,7 @@ export default function Footer(props) {
         {' '}
         by
         {' '}
-        <a href="https://www.marceloicampos.com/about" target="_blank">
+        <a href="https://marceloicampos.github.io/site-hello-world/desafios/d005_desafio_social.html" target="_blank">
           <span>Marcelo Campos</span>
         </a>
       </p>
