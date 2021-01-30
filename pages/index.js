@@ -92,7 +92,7 @@ export default function Home() {
           </p>
           <p>
             <Link href="/live"> 
-              <a>LINK PARA PAGE CODE LIVE</a>
+              <a>LINK PARA PAGE LIVE</a>
             </Link>
           </p>
           <p>AULA - 01 OK, 02 OK, 03 em DESENVOLVIMENTO</p>
