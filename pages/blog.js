@@ -17,7 +17,7 @@ export default function Blog() {
           <title>Blog</title>
       </Head>
       <header>
-        <Title color="red">BLOG</Title>
+        <Title color="red">BLOG - PÓS IMERSÃO</Title>
           <p>
             <Link href="/"> 
               <a>LINK PARA HOME</a>
