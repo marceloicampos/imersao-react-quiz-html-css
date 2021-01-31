@@ -5,6 +5,11 @@ import styled, {createGlobalStyle} from 'styled-components';
 const GlobalStyle = createGlobalStyle`
     body {
         font-family: sans-serif;
+        padding-left: 100px;
+    }
+    p {
+        color: black;
+        font-size: 20px;
     }
 `;
 
@@ -64,8 +69,8 @@ export default function Home(props) {
             <title>Live</title>
         </Head>
         
-        <Text>CÓDIGO DA LIVE - FINAL</Text>
-        
+        <Text>CODE DA LIVE - FINAL</Text>
+        <p>Dados extraídos da API do meu Git Hub</p>
         <Login>
             LOGIN - {props.dadosDoGitHub.login}
         </Login>
@@ -114,3 +119,4 @@ export async function getStaticProps() {
         throw new Error ('Deu ruim :(')
     }
   }
+  
