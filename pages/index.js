@@ -90,7 +90,15 @@ export default function Home() {
               <a>LINK PARA PAGE CODE DA LIVE</a>
             </Link>
           </p>
-          <p>AULA - 01 OK, 02 OK, 03 OK, 04 em DESENVOLVIMENTO</p>
+          <p>
+            <ul>
+            AULAS
+            <li>01 OK</li>
+            <li>02 OK</li>
+            <li>03 OK</li>
+            <li>04 em DESENVOLVIMENTO</li>
+          </ul>
+        </p>
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/marceloicampos/imersao-react-quiz-html-css" />
     </QuizBackground>
