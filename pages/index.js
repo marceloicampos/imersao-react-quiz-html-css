@@ -96,7 +96,7 @@ export default function Home() {
             <li>01 OK</li>
             <li>02 OK</li>
             <li>03 OK</li>
-            <li>04 em DESENVOLVIMENTO</li>
+            <li>04 OK</li>
           </ul>
         </p>
       </QuizContainer>
