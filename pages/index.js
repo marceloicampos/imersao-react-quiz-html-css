@@ -139,14 +139,15 @@ export default function Home() {
           </p>
           <p>
             <ul>
-            AULAS REALIZADAS
             <li>01 OK</li>
             <li>02 OK</li>
             <li>03 OK</li>
             <li>04 OK</li>
             <li>05 OK</li>
-            TODAS AS AULAS
-            <p>REALIZADAS</p>
+            TODAS AS AULAS REALIZADAS
+            <p>PREPARANDO</p>
+            <p>NOVA VERSÃO ... ;)</p>
+
           </ul>
         </p>
       </QuizContainer>
