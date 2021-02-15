@@ -113,6 +113,7 @@ export async function getStaticProps() {
                 dadosDoGitHub: retornoDaAPI
                 //dadoViaStaticProps: 'Dado simples vindo do Static Props'
             }, // will be passed to the page component as props
+            revalidate: 1
         }
     } 
     catch(err) {
