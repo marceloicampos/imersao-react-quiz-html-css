@@ -63,12 +63,12 @@ function LoadingWidget() {
       </Widget.Header>
 
       <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
-      <Lottie
-        width="200px"
-        height="200px"
-        className="lottie-container basic"
-        config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
-      />
+        <Lottie
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
+        />
       </Widget.Content>
     </Widget>
   );
@@ -116,7 +116,7 @@ function QuestionWidget({
         <AlternativesForm
           onSubmit={(infosDoEvento) => {
             infosDoEvento.preventDefault();
-            //onSubmit(); - não ative
+            // onSubmit(); - não ative
             setIsQuestionSubmited(true);
             setTimeout(() => {
               addResult(isCorrect);
@@ -213,7 +213,7 @@ export default function QuizPage({ externalQuestions, externalBg }) {
     <QuizBackground backgroundImage={bg}>
       <QuizContainer>
         <Head>
-            <title>Quiz</title>
+          <title>Quiz</title>
         </Head>
         <QuizLogo />
 
@@ -232,10 +232,12 @@ export default function QuizPage({ externalQuestions, externalBg }) {
         {screenState === screenStates.RESULT && <ResultWidget results={results} />}
 
         <p>
-            <Link href="/"> 
-              <a>LINK PARA HOME</a>
-            </Link>
-          </p>
+          <Link href="/">
+            <Button type="submit">
+              LINK PARA HOME
+            </Button>
+          </Link>
+        </p>
       </QuizContainer>
     </QuizBackground>
   );
@@ -256,7 +258,7 @@ export default function QuizPage() {
       </Head>
       <Quiz color="red">Página de Quiz</Quiz>
           <p>
-            <Link href="/"> 
+            <Link href="/">
               <a>LINK PARA HOME</a>
             </Link>
           </p>
